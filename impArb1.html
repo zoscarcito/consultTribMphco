@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/style-header.css">
+	<link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap/css/bootstrap.css">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="css/bootstrap/bootstrap/js/bootstrap.js"></script>
+	<title>Consulta de deuda</title>
+</head>
+<body>
+<header>
+        <div class="header-contenedor">
+            <div class="titulo-buscador-contenedor">
+                <div class="titulo">
+                    <h1>Servicio de Administración Tributaria - Huánuco</h1>
+                </div>
+                <div class="buscador">
+                    <input type="search" placeholder="¿Qué desea buscar?">
+                </div>
+            </div>
+            <nav class="menu-contenedor">
+                <ul class="menu">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="index.html">Consultas</a></li>
+                    <li>
+                        <a href="">Información
+                            <img class="arrow-informacion" src="arrow-menu.svg" alt="">
+                        </a>
+                        <div class="informacion-submenu-contenedor">
+                            <div class="informacion-submenu">
+                                <div>
+                                    <a href=""><h1>¿Cómo puedo pagar?</h1></a>
+                                    <p>Conozca las diferentes formas de pago</p>
+                                </div>
+                                <div>
+                                    <a href=""><h1>¿Dónde puedo pagar?</h1></a>
+                                    <p>Ubíque los lugares donde puede realizar sus pagos</p>
+                                </div>
+                                <div>
+                                    <a href=""><h1>Cronograma de pagos</h1></a>
+                                    <p>Informace sobre las fechas de vencimiento de pago</p>
+                                </div>
+                                <div>
+                                    <a href=""><h1>Cultura Tributaria</h1></a>
+                                    <p>Aprenda sobre los impuestos y multas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="">Nosotros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<section class="nav1">
+<nav class="animated bounceInDown bg-dark">
+    <ul>
+        <li class='sub-menu'><a href='#' >Impuesto Predial y Arbitrios Municipales<div class='fa fa-caret-down right'></div></a>
+            <ul>
+                <li><a id=""  href="impArb1.html">Consulta por DNI</a></li>
+                <li><a id=""  href="impArb2.html">Consulta por Apellidos y nombre</a></li>
+                <li><a id=""  href="impArb3.html">Consulta por Código de Contribuyente</a></li>
+            </ul>
+        </li>
+
+        <li class='sub-menu'><a href='#'>Impuesto Vehicular<div class='fa fa-caret-down right'></div></a>
+            <ul>
+                <li><a id="" href="vehicular1.html">Consulta por DNI</a></li>
+                <li><a id="" href="vehicular2.html">Consulta por Apellidos y nombre</a></li>
+                <li><a id="" href="vehicular3.html">Consulta por Placa de vehiculo</a></li>
+            </ul>
+        </li>
+
+        <li class='sub-menu'><a href='#'>Impuesto de Alcabala<div class='fa fa-caret-down right'></div></a>
+            <ul>
+                <li><a id="" href="alcabala1.html">Consulta por DNI</a></li>
+                <li><a id="" href="alcabala2.html">Consulta por Apellidos y nombre</a></li>
+                <li><a id="" href="alcabala3.html">Consulta por Código de Contribuyente</a></li>
+            </ul>
+        </li>
+
+        <li class='sub-menu'><a href='#'>Actualiza tus Datos<div class='fa fa-caret-down right'></div></a>
+            <ul>
+                <li><a id="" href="actualiza1.html">Consulta por DNI</a></li>
+                <li><a id="" href="actualiza2.html">Consulta por Apellidos y nombre</a></li>
+                <li><a id="" href="actualiza3.html">Consulta por Código de Contribuyente</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>
+</section>
+
+<section>
+	<div class='contenido2'>
+        <h1>IMPUESTO PREDIAL Y ARBITRIOS MUNICIPALES</h1>
+        <h2>BUSQUEDA POR TIPO Y NÚMERO DE DOCUMENTO DE IDENTIDAD</h2>
+        <p>Para continuar debe ingresar los datos del administrado de quien desea conocer su estado de cuenta de impuesto predial y arbitrios municipales</p>
+        <p>Documento de identidad:</p>
+
+        <form>
+        <select class="form-select" aria-label="Default select example">
+        <option selected>Documento de Identidad</option>
+        <option value="1">DNI</option>
+        <option value="2">RUC</option>
+        <option value="3">Carne de Extranjeria</option>
+        <option value="3">Pasaporte</option>
+        </select>
+        <input type="text" class="form-control" placeholder="Ingrese Documento de Identidad" aria-label="Recipient's username" aria-describedby="basic-addon2">
+        <input class="btn btn-primary" type="submit" value="Buscar">
+
+        </form>
+
+</select>
+	</div>
+</section>
+
+	<script>
+      $('.sub-menu ul').hide();
+		$(".sub-menu a").click(function () {
+    		$(this).parent(".sub-menu").children("ul").slideToggle("100");
+    		$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+		});
+ </script>
+</body>
+
+</html>

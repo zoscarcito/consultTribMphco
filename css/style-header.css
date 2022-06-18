@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header Styles */
+header{
+    display: flex;
+    background-color: #1A202C;
+    color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.header-contenedor{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+    /* Header-Top  Titulo-Buscador*/
+    .titulo-buscador-contenedor{
+        width: 80%;
+        margin: 0 auto;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .buscador input{
+        width: 400px;
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    /* Header-Bot Menu*/
+    .menu-contenedor{
+        background-color: #242d3e;
+    }
+
+    .menu{
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+    }
+    
+        .menu li{
+            font-size: 1.2rem;
+            list-style: none;
+            position: relative;
+            display: block;
+            padding: 15px 30px;
+        }
+
+        .arrow-informacion{
+            transform: var(--transform);
+            transition: transform 0.3s;
+        }
+
+        .menu li:hover{
+            background-color: #2452a8;
+            --transform: rotate(180deg) ;
+        }
+
+        .menu li:hover .informacion-submenu-contenedor{
+            visibility:visible;
+        }
+
+        .menu a{
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Submenu-Informacion */
+        .informacion-submenu-contenedor{
+            visibility: hidden;
+            background-color: #1e3d75;
+            width: 100%;
+            position: fixed;
+            margin-top: 15px;
+            left: 0;
+        }
+
+        .informacion-submenu{
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .informacion-submenu div{
+            width: 25%;
+            font-size: 1rem;
+            padding: 30px;
+            color: white;
+        }
+
+        .informacion-submenu div p{
+            margin-top: 5px;
+            color: #dedede;
+        }
